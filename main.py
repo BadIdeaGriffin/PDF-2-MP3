@@ -2,12 +2,13 @@
 import pdfplumber
 import pyttsx3
 speaker = pyttsx3.init()
+reader = pdfplumber
 
 #PDF extraction
 language = 'en'
 text = ""
 #Extract text. will need to replace pdf for each new PDF
-with pdfplumber.open('DICOM_CookBook.pdf') as pdf:
+with reader.open('DICOM_CookBook.pdf') as pdf:
     for page in pdf.pages:
         text += page.extract_text()
         print(text)
