@@ -21,3 +21,5 @@ pdf.close()
 speaker.runAndWait()
 speaker.stop()
 print("WORK DONE")"""
+
+"""proposed upgrades: Speed of reader, voices, ui"""
